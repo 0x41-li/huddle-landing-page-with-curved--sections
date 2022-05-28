@@ -1,0 +1,30 @@
+header {
+  height: 24px;
+  margin: 24px 24px 0px 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 96px;
+  height: 16px;
+}
+
+.header__btn {
+  background: #ffffff;
+  border: 0.588235px solid #ff52c1;
+  box-shadow: 0px 0px 5px rgba(255, 82, 193, 0.218778);
+  border-radius: 11.7647px;
+
+  height: 24px;
+  width: 80px;
+
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 9.41177px;
+  line-height: 13px;
+
+  color: #ff52c1;
+}
