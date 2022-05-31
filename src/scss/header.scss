@@ -10,6 +10,11 @@ header {
 .header__logo {
   width: 96px;
   height: 16px;
+
+  @media screen and (min-width: 768px) {
+    width: 140px;
+    height: 22px;
+  }
 }
 
 .header__btn {
@@ -27,4 +32,21 @@ header {
   line-height: 13px;
 
   color: #ff52c1;
+
+  transition: box-shadow 0.6s;
+
+  &:hover {
+    box-shadow: 0px 0px 9px rgba(255, 82, 193, 0.218778);
+    color: #ff8ed7;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 136px;
+    height: 40px;
+
+    border-radius: 20px;
+
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
