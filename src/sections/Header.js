@@ -10,7 +10,9 @@ export default function Header() {
   return (
     <header>
       <div className="header__logo">
-        <img src={logo} alt="" />
+        <a href="#">
+          <img src={logo} alt="" />
+        </a>
       </div>
       <div className="header__btn-wrapper">
         <button className="header__btn">Try It Free</button>
