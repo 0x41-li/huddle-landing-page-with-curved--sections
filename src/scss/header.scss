@@ -46,7 +46,7 @@ header {
 
   color: #ff52c1;
 
-  transition: box-shadow 0.6s;
+  transition: box-shadow 0.4s, color 0.4s;
 
   &:hover {
     box-shadow: 0px 0px 9px rgba(255, 82, 193, 0.218778);
