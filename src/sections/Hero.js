@@ -24,7 +24,7 @@ export default function Hero() {
       <div className="hero__numbers">
         <div className="hero__numbers__box">
           <img
-            className="hero__numbers-box__icon"
+            className="hero__numbers-box__icon hero__communities-icon"
             src={communitiesIcon}
             alt=""
           />
@@ -32,7 +32,7 @@ export default function Hero() {
           <p className="hero__numbers-box__para">Communities Formed</p>
         </div>
         <div className="hero__numbers__box">
-          <img className="hero__numbers-box__icon" src={messageIcon} alt="" />
+          <img className="hero__numbers-box__icon hero__message-icon" src={messageIcon} alt="" />
           <span className="hero__numbers-box__number">2.7m+</span>
           <p className="hero__numbers-box__para">Messages Sent</p>
         </div>

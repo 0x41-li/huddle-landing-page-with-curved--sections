@@ -77,7 +77,7 @@ h1 {
   margin-right: auto;
 
   &:hover {
-    background: #FF8ED7;
+    background: #ff8ed7;
   }
 
   @media screen and (min-width: 1200px) {
@@ -100,8 +100,66 @@ h1 {
 
   @media screen and (min-width: 1200px) {
     max-width: 1016px;
-    
+
     margin: 0 auto;
     margin-top: 120px;
   }
+}
+
+// Analytics part
+
+.hero__numbers {
+  margin-top: 120px;
+}
+
+.hero__numbers__box {
+  max-width: 160px;
+  margin: 0 auto;
+}
+
+.hero__numbers__box:nth-child(1) {
+  margin-bottom: 88px;
+}
+
+.hero__numbers__box > * {
+  display: block;
+}
+
+.hero__communities-icon {
+  width: 29px;
+  height: 26px;
+
+  position: relative;
+  top: 5px;
+}
+
+.hero__numbers-box__number {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 60.9524px;
+  line-height: 91px;
+
+  color: #00252e;
+}
+
+.hero__numbers-box__para {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 15.2381px;
+  line-height: 23px;
+
+  text-align: center;
+
+  color: #808e9a;
+
+  margin-top: 1px;
+}
+
+
+.hero__message-icon {
+  width: 27px;
+  height: 27px;
+
+  position: relative;
+  top: 2px;
 }
