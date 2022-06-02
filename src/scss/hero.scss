@@ -110,11 +110,21 @@ h1 {
 
 .hero__numbers {
   margin-top: 120px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .hero__numbers__box {
   max-width: 160px;
   margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
+    flex: 0 0 252px;
+    max-width: unset;
+  }
 }
 
 .hero__numbers__box:nth-child(1) {
@@ -131,6 +141,13 @@ h1 {
 
   position: relative;
   top: 5px;
+
+  @media screen and (min-width: 1200px) {
+    top: 8px;
+    
+    width: 46px;
+    height: 41px;
+  }
 }
 
 .hero__numbers-box__number {
@@ -140,6 +157,11 @@ h1 {
   line-height: 91px;
 
   color: #00252e;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 96px;
+    line-height: 144px;
+  }
 }
 
 .hero__numbers-box__para {
@@ -153,13 +175,26 @@ h1 {
   color: #808e9a;
 
   margin-top: 1px;
-}
 
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+    line-height: 36px;
+
+    margin-top: 2px;
+  }
+}
 
 .hero__message-icon {
   width: 27px;
-  height: 27px;
+  height: 23px;
 
   position: relative;
   top: 2px;
+
+  @media screen and (min-width: 1200px) {
+    top: 5px;
+
+    width: 46px;
+    height: 34px;
+  }
 }
