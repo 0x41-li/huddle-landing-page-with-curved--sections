@@ -10,6 +10,7 @@ body,
 
 img {
   max-width: 100%;
+  vertical-align: middle;
 }
 
 ul {
@@ -24,7 +25,6 @@ button {
   cursor: pointer;
 }
 
-// specific
 h1,
 h2 {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -33,4 +33,41 @@ h2 {
 p,
 a {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+// Utilities
+.section__h2 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+
+  text-align: center;
+
+  color: #00252e;
+}
+
+.section__para {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  text-align: center;
+
+  color: #00252e;
+}
+
+.hide-m {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.hide-d {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
