@@ -19,17 +19,21 @@ export default function FirstSection() {
         <img className="hide-d" src={topCurveMobile} alt="" />
         <img className="hide-m" src={topCurveDesktop} alt="" />
       </div>
-      <div className="first-section__image">
-        <img src={illustration} alt="" className="first-section__img" />
+      
+      <div className="first-section__row">
+        <div className="first-section__image">
+          <img src={illustration} alt="" className="first-section__img" />
+        </div>
+        <div className="first-section__text">
+          <h2 className="first-section__h2 section__h2">Grow Together</h2>
+          <p className="first-section__para section__para">
+            Generate meaningful discussions with your audience and build a
+            strong, loyal community. Think of the insightful conversations you
+            miss out on with a feedback form.
+          </p>
+        </div>
       </div>
-      <div className="first-section__text">
-        <h2 className="first-section__h2 section__h2">Grow Together</h2>
-        <p className="first-section__para section__para">
-          Generate meaningful discussions with your audience and build a strong,
-          loyal community. Think of the insightful conversations you miss out on
-          with a feedback form.
-        </p>
-      </div>
+
       <div className="first-section__bottom-curve">
         <img className="hide-d" src={bottomCurveMobile} alt="" />
         <img className="hide-m" src={bottomCurveDesktop} alt="" />

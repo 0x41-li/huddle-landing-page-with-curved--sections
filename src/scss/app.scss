@@ -45,6 +45,13 @@ a {
   text-align: center;
 
   color: #00252e;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
+    line-height: 60px;
+
+    text-align: left;
+  }
 }
 
 .section__para {
@@ -56,6 +63,14 @@ a {
   text-align: center;
 
   color: #00252e;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: left;
+
+  }
 }
 
 .hide-m {
