@@ -1,3 +1,5 @@
+@import "functions";
+
 html,
 body,
 *,
@@ -39,37 +41,83 @@ a {
 .section__h2 {
   font-family: "Poppins";
   font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: pxToVwMobile(20);
+  line-height: pxToVwMobile(30);
 
   text-align: center;
 
   color: #00252e;
 
+  @media screen and (min-width: 576px) {
+    font-size: pxToVwBetweenMobileAndTablet(20);
+    line-height: pxToVwBetweenMobileAndTablet(30);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: pxToVwTablet(20);
+    line-height: pxToVwTablet(30);
+    text-align: left;
+  }
+
+  @media screen and (min-width: 992px) {
+    font-size: pxToVwDesktop(20);
+    line-height: pxToVwDesktop(30);
+  }
+
   @media screen and (min-width: 1200px) {
+    font-size: pxToVwBigDesktop(40);
+    line-height: pxToVwBigDesktop(60);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: 40px;
     line-height: 60px;
-
-    text-align: left;
   }
 }
 
 .section__para {
   font-family: "Open Sans";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: pxToVwMobile(14);
+  line-height: pxToVwMobile(21);
 
   text-align: center;
 
   color: #00252e;
 
-  @media screen and (min-width: 1200px) {
-    font-size: 16px;
-    line-height: 24px;
+  margin-left: auto;
+  margin-right: auto;
 
+  margin-top: 16px;
+
+  @media screen and (min-width: 576px) {
+    font-size: pxToVwBetweenMobileAndTablet(14);
+    line-height: pxToVwBetweenMobileAndTablet(21);
+
+    max-width: 70%;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: pxToVwTablet(14);
+    line-height: pxToVwTablet(21);
     text-align: left;
 
+    max-width: unset;
+  }
+
+  @media screen and (min-width: 992px) {
+    font-size: pxToVwDesktop(14);
+    line-height: pxToVwDesktop(21);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: pxToVwBigDesktop(16);
+    line-height: pxToVwBigDesktop(24);
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
