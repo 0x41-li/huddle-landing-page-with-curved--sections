@@ -1,13 +1,11 @@
+@import "functions";
+
 .hero {
   margin: 0 auto;
   margin-top: 112px;
   padding: 0px 39px 0px 40px;
 
-  max-width: 600px;
-
   @media screen and (min-width: 1200px) {
-    max-width: unset;
-
     padding: 0px 63px 0px 80px;
 
     margin-top: 225px;
@@ -17,15 +15,34 @@
 h1 {
   font-family: "Poppins";
   font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: pxToVwMobile(24);
+  line-height: pxToVwMobile(36);
 
   text-align: center;
 
   color: #00252e;
 
+  @media screen and (min-width: 576px) {
+    font-size: pxToVwBetweenMobileAndTablet(24);
+    line-height: pxToVwBetweenMobileAndTablet(36);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: pxToVwTablet(24);
+    line-height: pxToVwTablet(36);
+  }
+
+  @media screen and (min-width: 992px) {
+    font-size: pxToVwDesktop(38);
+    line-height: pxToVwDesktop(60);
+  }
+
   @media screen and (min-width: 1200px) {
-    font-weight: 700;
+    font-size: pxToVwBigDesktop(42);
+    line-height: pxToVwBigDesktop(68);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: 48px;
     line-height: 72px;
   }
@@ -36,36 +53,56 @@ h1 {
 
   font-family: "Open Sans";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: pxToVwMobile(14);
+  line-height: pxToVwMobile(21);
 
   text-align: center;
 
   color: #00252e;
 
-  @media screen and (min-width: 1200px) {
-    font-size: 20px;
-    line-height: 30px;
+  @media screen and (min-width: 576px) {
+    font-size: pxToVwBetweenMobileAndTablet(20);
+    line-height: pxToVwBetweenMobileAndTablet(30);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: pxToVwTablet(20);
+    line-height: pxToVwTablet(30);
     max-width: 600px;
     margin: 0 auto;
     margin-top: 26px;
   }
+
+  @media screen and (min-width: 992px) {
+    font-size: pxToVwDesktop(20);
+    line-height: pxToVwDesktop(30);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: pxToVwBigDesktop(20);
+    line-height: pxToVwBigDesktop(30);
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .hero__btn {
-  width: 200px;
-  height: 40px;
+  width: pxToVwMobile(200);
+  height: pxToVwMobile(40);
 
   border: none;
 
   background: #ff52c1;
   box-shadow: 0px 3px 7px rgba(0, 37, 46, 0.223053);
-  border-radius: 20px;
+  border-radius: pxToVwMobile(20);
 
   font-family: "Open Sans";
   font-weight: 700;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: pxToVwMobile(12);
+  line-height: pxToVwMobile(18);
 
   color: #ffffff;
 
@@ -82,7 +119,39 @@ h1 {
     background: #ff8ed7;
   }
 
+  @media screen and (min-width: 576px) {
+    font-size: pxToVwBetweenMobileAndTablet(12);
+    line-height: pxToVwBetweenMobileAndTablet(18);
+    width: pxToVwBetweenMobileAndTablet(200);
+    height: pxToVwBetweenMobileAndTablet(40);
+    border-radius: pxToVwBetweenMobileAndTablet(20);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: pxToVwTablet(200);
+    height: pxToVwTablet(40);
+    border-radius: pxToVwTablet(20);
+    font-size: pxToVwTablet(12);
+    line-height: pxToVwTablet(18);
+  }
+
+  @media screen and (min-width: 992px) {
+    width: pxToVwDesktop(300);
+    height: pxToVwDesktop(60);
+    border-radius: pxToVwDesktop(30);
+    font-size: pxToVwDesktop(16);
+    line-height: pxToVwDesktop(26);
+  }
+
   @media screen and (min-width: 1200px) {
+    width: pxToVwBigDesktop(400);
+    height: pxToVwBigDesktop(80);
+    border-radius: pxToVwBigDesktop(40);
+    font-size: pxToVwBigDesktop(20);
+    line-height: pxToVwBigDesktop(30);
+  }
+
+  @media screen and (min-width: 1440px) {
     width: 400px;
     height: 80px;
     background: #ff52c1;
@@ -119,12 +188,40 @@ h1 {
 }
 
 .hero__numbers__box {
-  max-width: 160px;
+  max-width: pxToVwMobile(160);
   margin: 0 auto;
 
-  @media screen and (min-width: 1200px) {
-    flex: 0 0 252px;
+  @media screen and (min-width: 576px) {
+    max-width: pxToVwBetweenMobileAndTablet(170);
+  }
+
+  @media screen and (min-width: 768px) {
     max-width: unset;
+    flex: 0 0 pxToVwTablet(190);
+  }
+
+  @media screen and (min-width: 992px) {
+    flex: 0 0 pxToVwDesktop(190);
+  }
+}
+
+.hero__numbers__box:nth-child(1) {
+  @media screen and (min-width: 1200px) {
+    flex: 0 0 pxToVwBigDesktop(252);
+  }
+
+  @media screen and (min-width: 1440px) {
+    flex: 0 0 252;
+  }
+}
+
+.hero__numbers__box:nth-child(2) {
+  @media screen and (min-width: 1200px) {
+    flex: 0 0 pxToVwBigDesktop(287);
+  }
+
+  @media screen and (min-width: 1440px) {
+    flex: 0 0 287;
   }
 }
 
@@ -141,13 +238,33 @@ h1 {
 }
 
 .hero__communities-icon {
-  width: 29px;
-  height: 26px;
+  width: pxToVwMobile(29);
+  height: pxToVwMobile(26);
 
   position: relative;
   top: 5px;
 
+  @media screen and (min-width: 576px) {
+    width: pxToVwBetweenMobileAndTablet(29);
+    height: pxToVwBetweenMobileAndTablet(26);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: pxToVwTablet(29);
+    height: pxToVwTablet(26);
+  }
+
+  @media screen and (min-width: 992px) {
+    width: pxToVwDesktop(29);
+    height: pxToVwDesktop(26);
+  }
+
   @media screen and (min-width: 1200px) {
+    width: pxToVwBigDesktop(46);
+    height: pxToVwBigDesktop(41);
+  }
+
+  @media screen and (min-width: 1440px) {
     top: 8px;
 
     width: 46px;
@@ -158,12 +275,32 @@ h1 {
 .hero__numbers-box__number {
   font-family: "Open Sans";
   font-weight: 700;
-  font-size: 60.9524px;
-  line-height: 91px;
+  font-size: pxToVwMobile(60.9524);
+  line-height: pxToVwMobile(91);
 
   color: #00252e;
 
+  @media screen and (min-width: 576px) {
+    font-size: pxToVwBetweenMobileAndTablet(60.9524);
+    line-height: pxToVwBetweenMobileAndTablet(91);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: pxToVwTablet(60.9524);
+    line-height: pxToVwTablet(91);
+  }
+
+  @media screen and (min-width: 992px) {
+    font-size: pxToVwDesktop(60.9524);
+    line-height: pxToVwDesktop(91);
+  }
+
   @media screen and (min-width: 1200px) {
+    font-size: pxToVwBigDesktop(96);
+    line-height: pxToVwBigDesktop(144);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: 96px;
     line-height: 144px;
   }
@@ -172,8 +309,8 @@ h1 {
 .hero__numbers-box__para {
   font-family: "Open Sans";
   font-weight: 400;
-  font-size: 15.2381px;
-  line-height: 23px;
+  font-size: pxToVwMobile(15.2381);
+  line-height: pxToVwMobile(23);
 
   text-align: center;
 
@@ -181,7 +318,27 @@ h1 {
 
   margin-top: 1px;
 
+  @media screen and (min-width: 576px) {
+    font-size: pxToVwBetweenMobileAndTablet(15.2381);
+    line-height: pxToVwBetweenMobileAndTablet(23);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: pxToVwTablet(15.2381);
+    line-height: pxToVwTablet(23);
+  }
+
+  @media screen and (min-width: 992px) {
+    font-size: pxToVwDesktop(15.2381);
+    line-height: pxToVwDesktop(23);
+  }
+
   @media screen and (min-width: 1200px) {
+    font-size: pxToVwBigDesktop(24);
+    line-height: pxToVwBigDesktop(36);
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: 24px;
     line-height: 36px;
 
@@ -190,13 +347,33 @@ h1 {
 }
 
 .hero__message-icon {
-  width: 27px;
-  height: 23px;
+  width: pxToVwMobile(27);
+  height: pxToVwMobile(23);
 
   position: relative;
   top: 2px;
 
+  @media screen and (min-width: 576px) {
+    width: pxToVwBetweenMobileAndTablet(27);
+    height: pxToVwBetweenMobileAndTablet(23);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: pxToVwTablet(27);
+    height: pxToVwTablet(23);
+  }
+
+  @media screen and (min-width: 992px) {
+    width: pxToVwDesktop(27);
+    height: pxToVwDesktop(23);
+  }
+
   @media screen and (min-width: 1200px) {
+    width: pxToVwBigDesktop(46);
+    height: pxToVwBigDesktop(34);
+  }
+
+  @media screen and (min-width: 1440px) {
     top: 5px;
 
     width: 46px;

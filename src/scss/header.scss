@@ -1,3 +1,5 @@
+@import "functions";
+
 header {
   height: 24px;
   margin: 24px 24px 0px 24px;
@@ -15,16 +17,33 @@ header {
   }
 }
 
-.header__logo {
-  width: 96px;
-  height: 16px;
+.header__logo img {
+  display: block;
+
+  width: pxToVwMobile(96);
+  height: pxToVwMobile(16);
+
+  @media screen and (min-width: 576px) {
+    width: pxToVwBetweenMobileAndTablet(96);
+    height: pxToVwBetweenMobileAndTablet(16);
+  }
 
   @media screen and (min-width: 768px) {
-    width: 140px;
-    height: 22px;
+    width: pxToVwTablet(96);
+    height: pxToVwTablet(16);
+  }
+
+  @media screen and (min-width: 992px) {
+    width: pxToVwDesktop(140);
+    height: pxToVwDesktop(22);
   }
 
   @media screen and (min-width: 1200px) {
+    width: pxToVwBigDesktop(140);
+    height: pxToVwBigDesktop(22);
+  }
+
+  @media screen and (min-width: 1440px) {
     width: 240px;
     height: 38px;
   }
@@ -34,15 +53,15 @@ header {
   background: #ffffff;
   border: 0.588235px solid #ff52c1;
   box-shadow: 0px 0px 5px rgba(255, 82, 193, 0.218778);
-  border-radius: 11.7647px;
 
-  height: 24px;
-  width: 80px;
+  height: pxToVwMobile(24);
+  width: pxToVwMobile(80);
+  border-radius: pxToVwMobile(11.7647);
 
   font-family: "Open Sans";
   font-weight: 400;
-  font-size: 9.41177px;
-  line-height: 13px;
+  font-size: pxToVwMobile(9.41177);
+  line-height: pxToVwMobile(13);
 
   color: #ff52c1;
 
@@ -53,7 +72,43 @@ header {
     color: #ff8ed7;
   }
 
+  @media screen and (min-width: 576px) {
+    height: pxToVwBetweenMobileAndTablet(24);
+    width: pxToVwBetweenMobileAndTablet(80);
+    border-radius: pxToVwBetweenMobileAndTablet(11.7647);
+
+    font-size: pxToVwBetweenMobileAndTablet(9.41177);
+    line-height: pxToVwBetweenMobileAndTablet(13);
+  }
+
+  @media screen and (min-width: 768px) {
+    height: pxToVwTablet(24);
+    width: pxToVwTablet(80);
+    border-radius: pxToVwTablet(11.7647);
+
+    font-size: pxToVwTablet(9.41177);
+    line-height: pxToVwTablet(13);
+  }
+
+  @media screen and (min-width: 992px) {
+    height: pxToVwDesktop(24);
+    width: pxToVwDesktop(80);
+    border-radius: pxToVwDesktop(11.7647);
+
+    font-size: pxToVwDesktop(9.41177);
+    line-height: pxToVwDesktop(13);
+  }
+
   @media screen and (min-width: 1200px) {
+    height: pxToVwBigDesktop(40);
+    width: pxToVwBigDesktop(136);
+    border-radius: pxToVwBigDesktop(20);
+
+    font-size: pxToVwBigDesktop(16);
+    line-height: pxToVwBigDesktop(22);
+  }
+
+  @media screen and (min-width: 1440px) {
     width: 136px;
     height: 40px;
 

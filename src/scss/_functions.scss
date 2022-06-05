@@ -1,0 +1,19 @@
+@function pxToVwMobile($value) {
+  @return #{calc($value * 100 / 375)}vw;
+}
+
+@function pxToVwTablet($value) {
+  @return #{calc($value * 100 / 768)}vw;
+}
+
+@function pxToVwDesktop($value) {
+  @return #{calc($value * 100 / 992)}vw;
+}
+
+@function pxToVwBigDesktop($value) {
+  @return #{calc($value * 100 / 1200)}vw;
+}
+
+@function pxToVwBetweenMobileAndTablet($value) {
+  @return #{calc($value * 100 / 576)}vw;
+}
