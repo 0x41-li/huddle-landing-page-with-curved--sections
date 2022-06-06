@@ -14,7 +14,7 @@ import bottomCurveDesktop from "../assets/images/first-section-bottom-curve-desk
 
 export default function FirstSection() {
   return (
-    <section className="first-section section-flex">
+    <section className="first-section">
       <div className="first-section__top-curve">
         <img className="hide-d" src={topCurveMobile} alt="" />
         <img className="hide-m" src={topCurveDesktop} alt="" />
