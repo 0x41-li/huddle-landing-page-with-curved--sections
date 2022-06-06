@@ -5,6 +5,7 @@ import Header from "./sections/Header";
 import Hero from "./sections/Hero";
 import FirstSection from "./sections/FirstSection";
 import SecondSection from "./sections/SecondSection";
+import ThirdSection from "./sections/ThirdSection";
 
 // scss
 import "./scss/app.scss";
@@ -16,6 +17,7 @@ export default function App() {
       <Hero />
       <FirstSection />
       <SecondSection />
+      <ThirdSection />
     </main>
   );
 }
