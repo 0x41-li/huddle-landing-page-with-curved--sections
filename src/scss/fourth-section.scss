@@ -1,0 +1,125 @@
+@import "functions";
+
+.fourth-section {
+  margin-top: 66px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 96px;
+  }
+
+  @media screen and (min-width: 992px) {
+    margin-top: 120px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 162px;
+  }
+}
+
+.fourth-section__h2 {
+  font-size: pxToVwMobile(24);
+  line-height: pxToVwMobile(35);
+
+  text-align: center;
+
+  font-family: "Poppins";
+  font-weight: 700;
+
+  color: #00252e;
+
+  @media screen and (min-width: 576px) {
+    font-size: pxToVwBetweenMobileAndTablet(24);
+    line-height: pxToVwBetweenMobileAndTablet(35);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: pxToVwTablet(24);
+    line-height: pxToVwTablet(35);
+  }
+
+  @media screen and (min-width: 992px) {
+    font-size: pxToVwDesktop(24);
+    line-height: pxToVwDesktop(35);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: pxToVwBigDesktop(40);
+    line-height: pxToVwBigDesktop(60);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+
+.fourth-section__btn {
+  background: #ff52c1;
+  box-shadow: 0px 3px 7px rgba(0, 37, 46, 0.223053);
+
+  border-radius: pxToVwMobile(20);
+  width: pxToVwMobile(200);
+  height: pxToVwMobile(40);
+
+  margin: 0 auto;
+
+  margin-top: 40px;
+  display: block;
+
+  border: none;
+
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: pxToVwMobile(12);
+  line-height: pxToVwMobile(18);
+
+  color: #ffffff;
+
+  transition: background-color 0.4s;
+
+  &:hover {
+    background: #ff8ed7;
+  }
+
+  @media screen and (min-width: 576px) {
+    border-radius: pxToVwBetweenMobileAndTablet(20);
+    width: pxToVwBetweenMobileAndTablet(200);
+    height: pxToVwBetweenMobileAndTablet(40);
+    font-size: pxToVwBetweenMobileAndTablet(12);
+    line-height: pxToVwBetweenMobileAndTablet(18);
+  }
+
+  @media screen and (min-width: 768px) {
+    border-radius: pxToVwTablet(20);
+    width: pxToVwTablet(200);
+    height: pxToVwTablet(40);
+    font-size: pxToVwTablet(12);
+    line-height: pxToVwTablet(18);
+  }
+
+  @media screen and (min-width: 992px) {
+    border-radius: pxToVwDesktop(20);
+    width: pxToVwDesktop(200);
+    height: pxToVwDesktop(40);
+    font-size: pxToVwDesktop(12);
+    line-height: pxToVwDesktop(18);
+  }
+
+  @media screen and (min-width: 1200px) {
+    border-radius: pxToVwBigDesktop(40);
+    width: pxToVwBigDesktop(400);
+    height: pxToVwBigDesktop(80);
+    font-size: pxToVwBigDesktop(20);
+    line-height: pxToVwBigDesktop(30);
+  }
+
+  @media screen and (min-width: 1440px) {
+    border-radius: 40px;
+    width: 400px;
+    height: 80px;
+    font-size: 20px;
+    line-height: 30px;
+
+    margin-top: 42px;
+  }
+}
