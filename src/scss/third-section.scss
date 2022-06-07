@@ -26,8 +26,11 @@
     gap: 80px;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1200px) {
     padding: 59px 121px 35px 119px;
+  }
+
+  @media screen and (min-width: 1440px) {
 
     gap: 133px;
   }
