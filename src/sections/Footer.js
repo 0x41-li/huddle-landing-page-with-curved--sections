@@ -3,6 +3,17 @@ import React from "react";
 // scss
 import "../scss/footer.scss";
 
+// logo
+import { ReactComponent as Logo } from "../assets/images/logo.svg";
+
+// icons
+import { ReactComponent as PhoneIcon } from "../assets/images/icon-phone.svg";
+import { ReactComponent as EmailIcon } from "../assets/images/icon-email.svg";
+
+import { ReactComponent as FacebookIcon } from "../assets/images/facebook-icon.svg";
+import { ReactComponent as InstagramIcon } from "../assets/images/instagram-icon.svg";
+import { ReactComponent as TwitterIcon } from "../assets/images/twitter-icon.svg";
+
 // top curve
 import topCurveMobile from "../assets/images/footer-top-curve-mobile.png";
 
@@ -10,7 +21,11 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer__top-curve">
-        <img className="footer__top-curve__img d-m" src={topCurveMobile} alt="" />
+        <img
+          className="footer__top-curve__img d-m"
+          src={topCurveMobile}
+          alt=""
+        />
       </div>
       <div className="footer__row">
         <div className="footer__newsletter">
@@ -28,10 +43,41 @@ export default function Footer() {
               name="email"
               className="footer__newsletter__email-input"
             />
-            <button type="button" className="footer__form__btn">Subscribe</button>
+            <button type="button" className="footer__form__btn">
+              Subscribe
+            </button>
           </form>
         </div>
-        <div className="footer__info"></div>
+        <div className="footer__info">
+          <div className="footer__logo">
+            <Logo className="footer__logo__svg" />
+          </div>
+          <p className="footer__info__para">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+          </p>
+          <div className="footer__contact">
+            <div className="footer__contact__option">
+              <PhoneIcon />
+              <p className="footer__contact__para">Phone: +1-543-123-4567</p>
+            </div>
+            <div className="footer__contact__option">
+              <EmailIcon />
+              <p className="footer__contact__para">example@company.com</p>
+            </div>
+          </div>
+          <div className="footer__social-media">
+            <a href="#">
+              <FacebookIcon />
+            </a>
+            <a href="#">
+              <InstagramIcon />
+            </a>
+            <a href="#">
+              <TwitterIcon />
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   );
