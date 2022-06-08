@@ -16,14 +16,20 @@ import { ReactComponent as TwitterIcon } from "../assets/images/twitter-icon.svg
 
 // top curve
 import topCurveMobile from "../assets/images/footer-top-curve-mobile.png";
+import topCurveDesktop from "../assets/images/footer-top-curve-desktop.png";
 
 export default function Footer() {
   return (
     <footer>
       <div className="footer__top-curve">
         <img
-          className="footer__top-curve__img d-m"
+          className="footer__top-curve__img hide-d"
           src={topCurveMobile}
+          alt=""
+        />
+        <img
+          className="footer__top-curve__img hide-m"
+          src={topCurveDesktop}
           alt=""
         />
       </div>
@@ -42,6 +48,7 @@ export default function Footer() {
               type="email"
               name="email"
               className="footer__newsletter__email-input"
+              placeholder="Email address"
             />
             <button type="button" className="footer__form__btn">
               Subscribe
@@ -50,7 +57,7 @@ export default function Footer() {
         </div>
         <div className="footer__info">
           <div className="footer__logo">
-            <Logo className="footer__logo__svg" />
+            <Logo className="footer__logo__svg" viewBox="0 0 240 39" />
           </div>
           <p className="footer__info__para">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
@@ -58,11 +65,11 @@ export default function Footer() {
           </p>
           <div className="footer__contact">
             <div className="footer__contact__option">
-              <PhoneIcon />
+              <PhoneIcon viewBox="0 0 18 18" />
               <p className="footer__contact__para">Phone: +1-543-123-4567</p>
             </div>
             <div className="footer__contact__option">
-              <EmailIcon />
+              <EmailIcon viewBox="0 0 20 16" />
               <p className="footer__contact__para">example@company.com</p>
             </div>
           </div>
