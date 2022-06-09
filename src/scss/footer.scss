@@ -24,6 +24,15 @@ footer {
   @media screen and (min-width: 992px) {
     gap: 80px;
   }
+
+  @media screen and (min-width: 1200px) {
+    gap: 140px;
+    padding: 90px 120px 76px 120px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    gap: 340px;
+  }
 }
 
 .footer__row > * {
@@ -68,6 +77,16 @@ footer {
     font-size: pxToVwDesktop(22);
     line-height: pxToVwDesktop(32);
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: pxToVwBigDesktop(24);
+    line-height: pxToVwBigDesktop(36);
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .footer__newsletter__para {
@@ -87,13 +106,24 @@ footer {
   }
 
   @media screen and (min-width: 768px) {
-    font-size: pxToVwTablet(16);
-    line-height: pxToVwTablet(26);
+    font-size: pxToVwTablet(13);
+    line-height: pxToVwTablet(24);
   }
 
   @media screen and (min-width: 992px) {
-    font-size: pxToVwDesktop(16);
-    line-height: pxToVwDesktop(26);
+    font-size: pxToVwDesktop(14);
+    line-height: pxToVwDesktop(24);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: pxToVwDesktop(14);
+    line-height: pxToVwDesktop(24);
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 344px;
   }
 }
 
@@ -102,6 +132,14 @@ footer {
   @media screen and (min-width: 992px) {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 520px;
   }
 }
 
@@ -139,18 +177,33 @@ footer {
   }
 
   @media screen and (min-width: 768px) {
-    font-size: pxToVwTablet(16);
-    line-height: pxToVwTablet(26);
+    font-size: pxToVwTablet(14);
+    line-height: pxToVwTablet(24);
     height: pxToVwTablet(48);
     border-radius: pxToVwTablet(6);
   }
 
   @media screen and (min-width: 992px) {
-    font-size: pxToVwDesktop(16);
-    line-height: pxToVwDesktop(26);
+    font-size: pxToVwDesktop(14);
+    line-height: pxToVwDesktop(24);
     height: pxToVwDesktop(48);
     border-radius: pxToVwDesktop(6);
-    width: pxToVwDesktop(260);
+    max-width: pxToVwDesktop(260);
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: pxToVwBigDesktop(260);
+    height: pxToVwBigDesktop(48);
+    border-radius: pxToVwBigDesktop(6);
+    font-size: pxToVwBigDesktop(14);
+    line-height: pxToVwBigDesktop(24);
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 320px;
+    height: 48px;
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 
@@ -199,6 +252,21 @@ footer {
 
     margin: 0;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: pxToVwBigDesktop(160);
+    height: pxToVwBigDesktop(48);
+    font-size: pxToVwBigDesktop(16);
+    line-height: pxToVwBigDesktop(24);
+    border-radius: pxToVwBigDesktop(5);
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 160px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 // info part
@@ -229,6 +297,16 @@ footer {
     width: pxToVwDesktop(200);
     height: pxToVwDesktop(32);
   }
+
+  @media screen and (min-width: 1200px) {
+    width: pxToVwBigDesktop(240);
+    height: pxToVwBigDesktop(38);
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 240px;
+    height: 38px;
+  }
 }
 
 .footer__logo__svg path {
@@ -251,13 +329,23 @@ footer {
   }
 
   @media screen and (min-width: 768px) {
-    font-size: pxToVwTablet(16);
-    line-height: pxToVwTablet(26);
+    font-size: pxToVwTablet(14);
+    line-height: pxToVwTablet(24);
   }
 
   @media screen and (min-width: 992px) {
-    font-size: pxToVwDesktop(16);
-    line-height: pxToVwDesktop(26);
+    font-size: pxToVwDesktop(14);
+    line-height: pxToVwDesktop(24);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: pxToVwBigDesktop(14);
+    line-height: pxToVwBigDesktop(24);
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 
@@ -270,6 +358,14 @@ footer {
   align-items: center;
 
   gap: 19px;
+
+  @media screen and (min-width: 768px) {
+    gap: 22px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    gap: 24px;
+  }
 }
 
 .footer__contact__option:nth-child(2) {
@@ -294,6 +390,16 @@ footer {
     width: pxToVwDesktop(18);
     height: pxToVwDesktop(18);
   }
+
+  @media screen and (min-width: 1200px) {
+    width: pxToVwBigDesktop(18);
+    height: pxToVwBigDesktop(18);
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .footer__contact__option:nth-child(2) svg {
@@ -313,6 +419,16 @@ footer {
   @media screen and (min-width: 992px) {
     width: pxToVwDesktop(20);
     height: pxToVwDesktop(16);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: pxToVwBigDesktop(20);
+    height: pxToVwBigDesktop(16);
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 20px;
+    height: 16px;
   }
 }
 
@@ -337,6 +453,16 @@ footer {
   @media screen and (min-width: 992px) {
     font-size: pxToVwDesktop(16);
     line-height: pxToVwDesktop(26);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: pxToVwBigDesktop(16);
+    line-height: pxToVwDesktop(26);
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 16px;
+    line-height: 26px;
   }
 }
 
@@ -364,5 +490,15 @@ footer {
   @media screen and (min-width: 992px) {
     width: pxToVwDesktop(23);
     height: pxToVwDesktop(23);
+  }
+
+  @media screen and (min-width: 992px) {
+    width: pxToVwBigDesktop(32);
+    height: pxToVwBigDesktop(32);
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 32px;
+    height: 32px;
   }
 }
