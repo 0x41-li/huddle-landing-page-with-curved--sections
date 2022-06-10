@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // scss
 import "../scss/footer.scss";
@@ -19,6 +19,30 @@ import topCurveMobile from "../assets/images/footer-top-curve-mobile.png";
 import topCurveDesktop from "../assets/images/footer-top-curve-desktop.png";
 
 export default function Footer() {
+  const [emailInfo, setEmailInfo] = useState({
+    value: "",
+    valid: false,
+  });
+
+  function changeEmailHandler(e) {
+    const target = e.target;
+    setEmailInfo({
+      value: target.value,
+      valid: validateEmail(target.value) ? true : true,
+    });
+  }
+
+  function newsletterFormSubmitHandler(e) {
+    e.preventDefault();
+    if (!validateEmail(emailInfo.value)) {
+      setEmailInfo((prevEmailInfo) => {
+        return { ...prevEmailInfo, valid: false };
+      });
+    }
+  }
+
+  console.log(emailInfo);
+
   return (
     <footer>
       <div className="footer__top-curve">
@@ -43,21 +67,35 @@ export default function Footer() {
               address
             </p>
           </div>
-          <form className="footer__newsletter__form">
-            <input
-              type="email"
-              name="email"
-              className="footer__newsletter__email-input"
-              placeholder="Email address"
-            />
-            <button type="button" className="footer__form__btn">
-              Subscribe
-            </button>
+          <form
+            className="footer__newsletter__form"
+            onSubmit={newsletterFormSubmitHandler}
+            noValidate
+          >
+            <div className="footer__input-box">
+              <input
+                type="email"
+                name="email"
+                className={
+                  "footer__newsletter__email-input " +
+                  (!emailInfo.valid ? "error" : "")
+                }
+                placeholder="Email address"
+                value={emailInfo.value}
+                onChange={changeEmailHandler}
+              />
+              {!emailInfo.valid && (
+                <p className="footer__input-error">Check your email please</p>
+              )}
+            </div>
+            <button className="footer__form__btn">Subscribe</button>
           </form>
         </div>
         <div className="footer__info">
           <div className="footer__logo">
-            <Logo className="footer__logo__svg" viewBox="0 0 240 39" />
+            <a href="#">
+              <Logo className="footer__logo__svg" viewBox="0 0 240 39" />
+            </a>
           </div>
           <p className="footer__info__para">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
@@ -88,4 +126,10 @@ export default function Footer() {
       </div>
     </footer>
   );
+}
+
+function validateEmail(email) {
+  const re =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
 }
