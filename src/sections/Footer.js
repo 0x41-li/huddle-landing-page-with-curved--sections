@@ -21,7 +21,7 @@ import topCurveDesktop from "../assets/images/footer-top-curve-desktop.png";
 export default function Footer() {
   const [emailInfo, setEmailInfo] = useState({
     value: "",
-    valid: false,
+    valid: true,
   });
 
   function changeEmailHandler(e) {
@@ -40,8 +40,6 @@ export default function Footer() {
       });
     }
   }
-
-  console.log(emailInfo);
 
   return (
     <footer>
