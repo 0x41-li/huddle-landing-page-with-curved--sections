@@ -229,10 +229,35 @@ footer {
   margin-top: 2px;
   font-family: "Open Sans";
   font-weight: 600;
-  font-size: 12px;
-  line-height: 24px;
+  font-size: pxToVwMobile(12);
+  line-height: pxToVwMobile(24);
 
   color: #ff4343;
+
+  @media screen and (min-width: 576px) {
+    font-size: pxToVwBetweenMobileAndTablet(12);
+    line-height: pxToVwBetweenMobileAndTablet(24);
+  }
+  
+  @media screen and (min-width: 768px) {
+    font-size: pxToVwTablet(12);
+    line-height: pxToVwTablet(24);
+  }
+
+  @media screen and (min-width: 992px) {
+    font-size: pxToVwDesktop(12);
+    line-height: pxToVwDesktop(24);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: pxToVwBigDesktop(12);
+    line-height: pxToVwBigDesktop(24);
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 12px;
+    line-height: 24px;
+  }
 }
 
 .footer__form__btn {
