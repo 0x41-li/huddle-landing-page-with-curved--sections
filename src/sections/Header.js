@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header>
       <div className="header__logo">
-        <a href="#">
+        <a href="#" aria-label="Go to home page">
           <img src={logo} alt="" />
         </a>
       </div>

@@ -91,7 +91,7 @@ export default function Footer() {
         </div>
         <div className="footer__info">
           <div className="footer__logo">
-            <a href="#">
+            <a href="#" aria-label="Go to home page">
               <Logo className="footer__logo__svg" viewBox="0 0 240 39" />
             </a>
           </div>
@@ -110,13 +110,13 @@ export default function Footer() {
             </div>
           </div>
           <div className="footer__social-media">
-            <a href="#">
+            <a href="#" aria-label="Follow and contact us on Facebook">
               <FacebookIcon />
             </a>
-            <a href="#">
+            <a href="#" aria-label="Follow us and contact on Instagram">
               <InstagramIcon />
             </a>
-            <a href="#">
+            <a href="#" aria-label="Follow us and contact us on Twitter">
               <TwitterIcon />
             </a>
           </div>
