@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [[Add live site URL here](https://0x41-li.github.io/huddle-landing-page-with-curved-sections/)](https://0x41-li.github.io/huddle-landing-page-with-curved-sections/)
 
 ## My process
 
@@ -45,6 +45,6 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@0x41-li](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@0x41-li](https://www.frontendmentor.io/profile/0x41-li)
 - Twitter - [@AliSbane2](https://www.twitter.com/AliSbane2)
 

@@ -238,7 +238,7 @@ footer {
     font-size: pxToVwBetweenMobileAndTablet(12);
     line-height: pxToVwBetweenMobileAndTablet(24);
   }
-  
+
   @media screen and (min-width: 768px) {
     font-size: pxToVwTablet(12);
     line-height: pxToVwTablet(24);
